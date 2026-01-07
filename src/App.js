@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { BarChart, Bar, Cell, ResponsiveContainer, PieChart, Pie } from 'recharts';
+import React, { useState} from 'react';
+
 
 // Question database with dosha weights
 const QUESTIONS = [
@@ -218,7 +218,6 @@ const PRAKRITI_DESCRIPTIONS = {
 const PrakritiDashboard = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState({ vata: 0, pitta: 0, kapha: 0 });
-  const [answers, setAnswers] = useState({});
   const [isComplete, setIsComplete] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
